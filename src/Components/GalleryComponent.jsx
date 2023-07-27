@@ -1,19 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import IconButton from "@mui/material/IconButton";
-import DataComponent from "./DataComponent";
+import { fetchData } from "./DataComponent";
 import ModalComponent from "./ModalComponent";
+import InfoButton from "./InfoButton";
 
 import HeartIconComponent from "./HeartIconComponent";
 
 const GalleryComponent = () => {
 
+  const [openDialog, setOpenDialog] = useState(false);
+  const [data, setData] = useState([]);
+  const [selectedItems, setSelectedItems] = useState([]);
+
+  useEffect(() => {
+    // Fetch the data when the component mounts
+    fetchData()
+      .then((result) => setData(result))
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
+
+  const handleOpenDialog = (item) => {
+    setSelectedItems([...selectedItems, item]);
+  };
+
+  const handleCloseDialog = () => {
+    setOpenDialog(false);
+    setSelectedItems([]);
+  };
+
   return (
     <>
       <ImageList cols={4}>
-        {DataComponent.map((item) => (
+        {data.map((item) => (
           <ImageListItem key={item.img}>
             <img
               src={`${item.img}?w=248&fit=crop&auto=format`}
@@ -29,7 +50,7 @@ const GalleryComponent = () => {
               }}
               position="top"
               actionIcon={
-                <ModalComponent key={item.img}/>
+                <InfoButton onClick={() => handleOpenDialog(item)} />
               }
               actionPosition="right"
             />
@@ -54,8 +75,19 @@ const GalleryComponent = () => {
           </ImageListItem>
         ))}
       </ImageList>
+
+      {selectedItems.map((selectedItem) => (
+        <ModalComponent
+          key={selectedItem.id}
+          open={true} // Open the dialog for the selected item
+          onClose={handleCloseDialog}
+          title={selectedItem.title}
+          content={selectedItem.description}
+          // Any other data from the "selectedItem" can be passed to the dialog here
+        />
+      ))}
     </>
   );
 };
 
-export default GalleryComponent
+export default GalleryComponent;

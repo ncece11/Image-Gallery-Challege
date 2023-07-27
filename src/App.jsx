@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import './App.css'
 import HeaderComponent from './Components/HeaderComponent'
 import GalleryComponent from './Components/GalleryComponent'
