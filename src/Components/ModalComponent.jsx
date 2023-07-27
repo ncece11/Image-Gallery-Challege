@@ -12,8 +12,7 @@ const ModalComponent = (props) => {
   const [open, setOpen] = React.useState(true);
   const [fullWidth] = React.useState(true);
   const [maxWidth] = React.useState("md");
-
-
+  
   // const handleClickOpen = () => {
   //   setOpen(true);
   // };

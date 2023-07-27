@@ -9,8 +9,7 @@ const InfoButton = ({ onClick }) => {
       <IconButton
         sx={{ color: "white" }}
         // aria-label={`star ${item.title}`}
-        onClick={onClick}
-        // onClick={handleClickOpen} // putformodal
+        onClick={onClick} // putformodal
       >
         <InfoIcon />
       </IconButton>
