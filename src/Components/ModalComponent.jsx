@@ -10,10 +10,11 @@ import InfoIcon from "@mui/icons-material/Info";
 import IconButton from "@mui/material/IconButton";
 import DataComponent from "./DataComponent";
 
-export default function ModalComponent() {
+
+export default function ModalComponent () {
   const [open, setOpen] = React.useState(false);
   const [fullWidth] = React.useState(true);
-  const [maxWidth] = React.useState("sm");
+  const [maxWidth] = React.useState("md");
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -31,14 +32,13 @@ export default function ModalComponent() {
       >
         <InfoIcon />
       </IconButton>
-      {DataComponent.map((item) => (
       <Dialog
         fullWidth={fullWidth}
         maxWidth={maxWidth}
         open={open}
         onClose={handleClose}
       >
-        <DialogTitle key="{item}">{item.title}</DialogTitle>
+        <DialogTitle>huhu</DialogTitle>
         <DialogContent>
           <DialogContentText>
             You can set my maximum width and whether to adapt or not.
@@ -58,7 +58,6 @@ export default function ModalComponent() {
           <Button onClick={handleClose}>Close</Button>
         </DialogActions>
       </Dialog>
-      ))}
     </React.Fragment>
   );
 }
