@@ -75,7 +75,8 @@ const GalleryComponent = () => {
           </ImageListItem>
         ))}
       </ImageList>
-
+      
+      {/* CALLING MODAL */}
       {selectedItems.map((selectedItem) => (
         <ModalComponent
           key={selectedItem.id}
@@ -86,6 +87,7 @@ const GalleryComponent = () => {
           // Any other data from the "selectedItem" can be passed to the dialog here
         />
       ))}
+
     </>
   );
 };
