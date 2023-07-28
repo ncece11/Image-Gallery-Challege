@@ -10,13 +10,11 @@ import InfoButton from "./InfoButton";
 import HeartIconComponent from "./HeartIconComponent";
 
 const GalleryComponent = () => {
-
   const [openDialog, setOpenDialog] = useState(false);
   const [data, setData] = useState([]);
   const [selectedItems, setSelectedItems] = useState([]);
 
   useEffect(() => {
-    // Fetch the data when the component mounts
     fetchData()
       .then((result) => setData(result))
       .catch((error) => console.error("Error fetching data:", error));
@@ -49,9 +47,7 @@ const GalleryComponent = () => {
                   "rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)",
               }}
               position="top"
-              actionIcon={
-                <InfoButton onClick={() => handleOpenDialog(item)} />
-              }
+              actionIcon={<InfoButton onClick={() => handleOpenDialog(item)} />}
               actionPosition="right"
             />
             <ImageListItemBar
@@ -67,7 +63,7 @@ const GalleryComponent = () => {
                   sx={{ color: "white" }}
                   aria-label={`star ${item.title}`}
                 >
-                  <HeartIconComponent/>
+                  <HeartIconComponent />
                 </IconButton>
               }
               actionPosition="right"
@@ -75,7 +71,7 @@ const GalleryComponent = () => {
           </ImageListItem>
         ))}
       </ImageList>
-      
+
       {/* CALLING MODAL */}
       {selectedItems.map((selectedItem) => (
         <ModalComponent
@@ -87,7 +83,6 @@ const GalleryComponent = () => {
           // Any other data from the "selectedItem" can be passed to the dialog here
         />
       ))}
-
     </>
   );
 };

@@ -45,14 +45,13 @@ const HeaderComponent = () => {
                   <br />
                   The name "Ghibli" was chosen by Miyazaki from the Italian noun
                   ghibli (also used in English), based on the Libyan Arabic name
-                  for hot desert wind (ghiblī), and the namesake of an
-                  Italian aircraft, the Caproni Ca.309. The name was chosen by
-                  Miyazaki due to his passion for aviation and also for the idea
-                  that the studio would "blow a new wind through the anime
-                  industry".Although the Italian word would be more
-                  accurately transcribed as "Giburi" (ギブリ), with a hard g
-                  sound, the studio's name is written in Japanese as Jiburi
-                  ジブリ.
+                  for hot desert wind (ghiblī), and the namesake of an Italian
+                  aircraft, the Caproni Ca.309. The name was chosen by Miyazaki
+                  due to his passion for aviation and also for the idea that the
+                  studio would "blow a new wind through the anime
+                  industry".Although the Italian word would be more accurately
+                  transcribed as "Giburi" (ギブリ), with a hard g sound, the
+                  studio's name is written in Japanese as Jiburi ジブリ.
                 </p>
               </Typography>
             </Grid>

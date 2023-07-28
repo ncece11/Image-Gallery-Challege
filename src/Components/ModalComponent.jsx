@@ -8,14 +8,10 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 
 const ModalComponent = (props) => {
-  const {title, content } = props;
+  const { title, content } = props;
   const [open, setOpen] = React.useState(true);
   const [fullWidth] = React.useState(true);
   const [maxWidth] = React.useState("md");
-  
-  // const handleClickOpen = () => {
-  //   setOpen(true);
-  // };
 
   const handleClose = () => {
     setOpen(false);
@@ -26,14 +22,12 @@ const ModalComponent = (props) => {
       <Dialog
         fullWidth={fullWidth}
         maxWidth={maxWidth}
-        open={open} 
+        open={open}
         onClose={handleClose}
       >
         <DialogTitle>{title}</DialogTitle>
         <DialogContent>
-          <DialogContentText>
-            {content}
-          </DialogContentText>
+          <DialogContentText>{content}</DialogContentText>
           <Box
             noValidate
             component="form"
@@ -51,7 +45,6 @@ const ModalComponent = (props) => {
       </Dialog>
     </React.Fragment>
   );
-}
+};
 
 export default ModalComponent;
-
