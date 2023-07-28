@@ -2,7 +2,13 @@
 
 React + Vite and Material UI
 
-[![image-2023-07-25-131915703.png](https://i.postimg.cc/yYpzV9Th/image-2023-07-25-131915703.png)](https://postimg.cc/rK4HjD3z)
+LightMode
+[![image-2023-07-29-010524138.png](https://i.postimg.cc/FHVZBybd/image-2023-07-29-010524138.png)](https://postimg.cc/RWqK3nD4)
+[![image-2023-07-29-010755872.png](https://i.postimg.cc/RFM2YCn9/image-2023-07-29-010755872.png)](https://postimg.cc/zLcdbrjP)
+
+DarkMode
+[![image-2023-07-29-010852710.png](https://i.postimg.cc/KjTVk16P/image-2023-07-29-010852710.png)](https://postimg.cc/XBVxtY7q)
+[![image-2023-07-29-010938047.png](https://i.postimg.cc/XN5DgyPF/image-2023-07-29-010938047.png)](https://postimg.cc/ThR9dhfY)
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
