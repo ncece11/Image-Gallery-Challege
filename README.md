@@ -3,7 +3,7 @@
 React + Vite and Material UI
 
 LightMode
-[![image-2023-07-29-012903365.png](https://i.postimg.cc/pLxn93w4/image-2023-07-29-012903365.png)](https://postimg.cc/ykQNtpYy)
+[![Opera-Snapshot-2023-07-29-013105-localhost.png](https://i.postimg.cc/xCHm7mBN/Opera-Snapshot-2023-07-29-013105-localhost.png)](https://postimg.cc/ZBb0vWbJ)
 [![image-2023-07-29-012958032.png](https://i.postimg.cc/0y8b5Dmq/image-2023-07-29-012958032.png)](https://postimg.cc/fJrwB3BH)
 
 DarkMode
