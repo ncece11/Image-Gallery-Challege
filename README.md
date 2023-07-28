@@ -3,8 +3,8 @@
 React + Vite and Material UI
 
 LightMode
-[![image-2023-07-29-010524138.png](https://i.postimg.cc/FHVZBybd/image-2023-07-29-010524138.png)](https://postimg.cc/RWqK3nD4)
-[![image-2023-07-29-010755872.png](https://i.postimg.cc/RFM2YCn9/image-2023-07-29-010755872.png)](https://postimg.cc/zLcdbrjP)
+[![image-2023-07-29-012903365.png](https://i.postimg.cc/pLxn93w4/image-2023-07-29-012903365.png)](https://postimg.cc/ykQNtpYy)
+[![image-2023-07-29-012958032.png](https://i.postimg.cc/0y8b5Dmq/image-2023-07-29-012958032.png)](https://postimg.cc/fJrwB3BH)
 
 DarkMode
 [![image-2023-07-29-010852710.png](https://i.postimg.cc/KjTVk16P/image-2023-07-29-010852710.png)](https://postimg.cc/XBVxtY7q)
